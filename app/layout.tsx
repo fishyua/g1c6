@@ -13,17 +13,10 @@ const inter = Inter({
   display: 'swap',
 })
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="zh-Hans">
-      <body className={cn(
-        "font-sans antialiased",
-        inter.variable
-      )}>{children}</body>
+      <body className={cn('font-sans antialiased', inter.variable)}>{children}</body>
     </html>
   )
 }
