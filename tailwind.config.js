@@ -11,6 +11,15 @@ module.exports = {
       fontFamily: {
         default: ['var(--font-inter)'],
       },
+      lineHeight: {
+        wtf: '.9',
+      },
+      transitionProperty: {
+        spacing: 'margin, padding',
+      },
+      transitionTimingFunction: {
+        quartic: 'cubic-bezier(.17,.84,.44,1)',
+      },
       borderRadius: {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',
