@@ -23,7 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           navItems={[
             {
               icon: <HomeIcon />,
-              content: '高一六班',
+              content: '高一6班',
               href: '/',
             },
             {
