@@ -19,7 +19,7 @@ export default function Layout(props: LayoutProps) {
         {props.navItems.map((val, i) => (
           <Link
             key={i}
-            className="transition-spacing ease-quartic duration-300 flex items-center justify-center px-4 hover:px-6 border-r"
+            className="transition-spacing ease-quartic duration-300 active:bg-accent flex items-center justify-center px-4 hover:px-6 border-r"
             href={val.href}
           >
             {val.icon && val.icon}
