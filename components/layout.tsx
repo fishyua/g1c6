@@ -15,11 +15,11 @@ interface LayoutProps extends PropsWithChildren {
 export default function Layout(props: LayoutProps) {
   return (
     <div className="flex flex-col h-screen">
-      <nav className="h-10 border-b flex flex-row text-sm leading-wtf">
+      <nav className="h-10 border-b flex flex-row text-sm leading-wtf shrink-0">
         {props.navItems.map((val, i) => (
           <Link
             key={i}
-            className="transition-spacing ease-quartic duration-300 flex items-center justify-center px-4 hover:px-6 border-r"
+            className="transition-spacing ease-quartic duration-300 active:bg-accent flex items-center justify-center px-4 hover:px-6 border-r"
             href={val.href}
           >
             {val.icon && val.icon}
