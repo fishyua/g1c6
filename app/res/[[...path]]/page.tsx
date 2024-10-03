@@ -43,9 +43,9 @@ export default function Page({ params: { path = [] } }: PageProps) {
               {i > 0 && <BreadcrumbSeparator />}
               <BreadcrumbItem>
                 {i == pathWithPrefix.length - 1 ? (
-                  <BreadcrumbPage children={val} />
+                  <BreadcrumbPage>{val}</BreadcrumbPage>
                 ) : (
-                  <BreadcrumbLink children={val} />
+                  <BreadcrumbLink>{val}</BreadcrumbLink>
                 )}
               </BreadcrumbItem>
             </Fragment>
